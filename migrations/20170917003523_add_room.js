@@ -2,7 +2,7 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('room', t => {
     t.increments()
-    t.string('title').notNullable().unique()
+    t.string('title').notNullable().unique() // 구별하기 위해 사용
   })
 };
 
